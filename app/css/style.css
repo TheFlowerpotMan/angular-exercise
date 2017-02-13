@@ -28,6 +28,10 @@
     margin: 20px;
     padding: 9px;
     display: block;
+    transition: box-shadow 0.2s ease-in-out;
+}
+.post:hover{
+    box-shadow: 6px 10px 30px #777777;
 }
 .thumbnail {
     float: left;
