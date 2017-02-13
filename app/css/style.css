@@ -1,21 +1,25 @@
  .hoverline:hover {
-    text-decoration: underline;
-}
- a {
-    text-decoration: none; 
-    color: black;
+     text-decoration: underline;
  }
+ 
+ a {
+     text-decoration: none;
+     color: black;
+ }
+ 
  .button {
-    padding: 5px 20px 5px 20px;
-    border: 1px solid lightgray;
-    width: 100px;
-    margin-top: 25px;
-    margin-bottom: 9px;
-}
-.button:hover {
-    border: 1px solid black;
-    box-shadow: 1.5px 5px 25px 1px #888888;
-}
+     padding: 5px 20px 5px 20px;
+     border: 1px solid lightgray;
+     width: 100px;
+     margin-top: 25px;
+     margin-bottom: 9px;
+ }
+ 
+ .button:hover {
+     border: 1px solid black;
+     box-shadow: 1.5px 5px 25px 1px #888888;
+ }
+ 
  .header {
      text-align: center;
      margin-top: 15px;
@@ -23,54 +27,62 @@
      border-bottom: 1px solid black;
      overflow: hidden;
  }
- .post{
-    box-shadow: 1.5px 5px 25px #888888;
-    margin: 20px;
-    padding: 9px;
-    display: block;
-    transition: box-shadow 0.2s ease-in-out;
-}
-.post:hover{
-    box-shadow: 6px 10px 30px #777777;
-}
-.thumbnail {
-    float: left;
-}
-.info {
-    overflow: hidden;
-    padding-left: 10px;
-}
-.user-info {
-    border: 1px solid black;
-    height: 150px;
-    width: 550px;
-}
-.comments {
-    border: 1px solid black;
-    margin-top: 10px;
-    padding-left: 5px;
-}
-#userpage {
-    max-width: 80%;
-    margin: auto;
-}
-.alluserinfo {
-    margin-left: 20px;
-    width: 300px;
-    float: left;
-    
-}
-#userimg {
-    overflow: hidden;
-}
-.useredit {
-    position: absolute;
-    right: 50px;
-    top: 50px;
-    height: 50px;
-    width: 50px;
-    border: 1px solid black;
-    text-align: center;
-    border-radius: 50px;
-}
-
+ 
+ .post {
+     box-shadow: 1.5px 5px 25px #888888;
+     margin: 20px;
+     padding: 9px;
+     display: block;
+     transition: box-shadow 0.2s ease-in-out;
+ }
+ 
+ .post:hover {
+     box-shadow: 6px 10px 30px #777777;
+ }
+ 
+ .thumbnail {
+     float: left;
+ }
+ 
+ .info {
+     overflow: hidden;
+     padding-left: 10px;
+ }
+ 
+ .user-info {
+     border: 1px solid black;
+     height: 150px;
+     width: 550px;
+ }
+ 
+ .comments {
+     border: 1px solid black;
+     margin-top: 10px;
+     padding-left: 5px;
+ }
+ 
+ #userpage {
+     max-width: 80%;
+     margin: auto;
+ }
+ 
+ .alluserinfo {
+     margin-left: 20px;
+     width: 300px;
+     float: left;
+ }
+ 
+ #userimg {
+     overflow: hidden;
+ }
+ 
+ .useredit {
+     position: absolute;
+     right: 50px;
+     top: 50px;
+     height: 50px;
+     width: 50px;
+     border: 1px solid black;
+     text-align: center;
+     border-radius: 50px;
+ }
