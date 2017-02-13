@@ -1,0 +1,42 @@
+<html ng-app='app'>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="../controllers/IndexController.js"></script>
+    <script src="../controllers/UserEditController.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" </head>
+
+</head>
+<body ng-controller="UserEditController as vm">
+    <div class="header">
+        <a href="../index.html"><h1>Page of posts</h1></a>
+        <p>A random page of latin blog posts...</p>
+        <a href="userEdit.html?userID=1">
+        <div class="useredit">
+            <p>Edit</p>
+        </div>
+        </a>
+    </div>
+    <div id="userpage">
+        <div class="alluserinfo">
+            <h2>{{vm.users.name}}</h2>
+            <p><b>ID:</b>{{vm.users.id}}</p>
+            <p><b>Email:</b> <input type="text" + 
+                            ng-model="vm.users.email"></p>
+            <p><b>Phone:</b> <input type="text" + 
+                            ng-model="vm.users.phone"></p>
+            <p><b>Website:</b> <input type="text" + 
+                            ng-model="vm.users.website"></p>
+            <p><b>Company:</b> <input type="text" + 
+                            ng-model="vm.users.company.name"></p>
+            <p><b>Picture: </b> <input type="file" + 
+                            ng-model="vm.photo.url"></p>
+            <button type="button" id="save">Save Data</button> 
+        </div>
+        <div id="userimg">
+            <img src="{{vm.photo.url}}" alt="face..."/>
+        </div>
+    </div>
+
+</body>
+</html>

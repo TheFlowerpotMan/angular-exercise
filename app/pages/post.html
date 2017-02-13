@@ -1,0 +1,43 @@
+<html ng-app='app'>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="../controllers/IndexController.js"></script>
+    <script src="../controllers/PostController.js"></script>
+    <script src="../components/comment.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" </head>
+
+</head>
+
+<body ng-controller="PostController as vm">
+    <div class="header">
+        <a href="../index.html"><h1>Page of posts</h1></a>
+        <p>A random page of latin blog posts...</p>
+        <a href="userEdit.html?userID=1">
+        <div class="useredit">
+            <p>Edit</p>
+        </div>
+        </a>
+    </div>
+
+    <div class="single-post">
+        <h2>{{vm.post.title}}</h2><br>
+        <p>{{vm.post.body}}</p><br>
+    </div>
+    <div class="user-info">
+        <div class="thumbnail">
+            <img src="{{vm.photo.thumbnailUrl}}" alt="face..." />
+        </div>
+        <div class="info">
+            <h4><a class="hoverline" + 
+            href=user.html?userID={{vm.users.id}}>{{vm.users.name}}</a></h4>
+            <p><b>Email: </b><a href="mailto:{{vm.users.email}}?subject=I&love&your&post!" + 
+            class="hoverline">{{vm.users.email}}</a></p>
+            <p><b>Favorite phrase:</b> {{vm.users.company.bs}}</p>
+        </div>
+    </div>
+    <h4>Comments</h4>
+    <comment ng-repeat='n in vm.comments' inpost='n'></comment>
+</body>
+
+</html>

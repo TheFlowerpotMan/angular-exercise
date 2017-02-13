@@ -1,0 +1,25 @@
+<html ng-app='app'>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="controllers/IndexController.js"></script>
+    <script src="components/post.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" </head>
+
+    <body ng-controller='IndexController as vm'>
+        <div class="header">
+            <a href="index.html"><h1>Page of posts</h1></a>
+            <p>A random page of latin blog posts...</p>
+            <a href="pages/userEdit.html?userID=1">
+        <div class="useredit">
+            <p>Edit</p>
+        </div>
+        </a>
+        </div>
+
+        <post class="post" ng-repeat='loopPost in vm.posts' inpost='loopPost'></post>
+        <button type="button" ng-click="vm.loadMore()">Load More</button>
+
+    </body>
+
+</html>

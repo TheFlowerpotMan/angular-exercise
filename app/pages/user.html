@@ -1,0 +1,37 @@
+<html ng-app='app'>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
+    <script src="../controllers/IndexController.js"></script>
+    <script src="../controllers/UserController.js"></script>
+    <link rel="stylesheet" type="text/css" href="../css/style.css" </head>
+
+</head>
+
+<body ng-controller="UserController as vm">
+    <div class="header">
+        <a href="../index.html"><h1>Page of posts</h1></a>
+        <p>A random page of latin blog posts...</p>
+        <a href="userEdit.html?userID=1">
+        <div class="useredit">
+            <p>Edit</p>
+        </div>
+        </a>
+    </div>
+    <div id="userpage">
+        <div class="alluserinfo">
+            <h2>{{vm.users.name}}</h2>
+            <p><b>ID:</b> {{vm.users.id}}</p>
+            <p><b>Email:</b> {{vm.users.email}}</p>
+            <p><b>Phone:</b> {{vm.users.phone}}</p>
+            <p><b>Website:</b> {{vm.users.website}}</p>
+            <p><b>Company:</b> {{vm.users.company.name}}
+        </div>
+        <div id="userimg">
+            <img src="{{vm.photo.url}}" alt="face..."/>
+        </div>
+    </div>
+
+</body>
+
+</html>
